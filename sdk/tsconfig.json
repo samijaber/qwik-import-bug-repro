@@ -23,7 +23,8 @@
   "include": [
     "types.d.ts",
     "types-hack.d.ts",
-    "src"
+    "src",
+    "vite.config.ts"
   ],
   "exclude": [
     "src/blocks/form/form.tsx",

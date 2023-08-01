@@ -1,2 +1,1 @@
-import type { ExecutorArgs } from "./types";
-export declare const runInNonNode: ({ builder, context, event, rootState, localState, rootSetState, useCode, }: ExecutorArgs) => any;
+export declare const runInNonNode: () => any;
