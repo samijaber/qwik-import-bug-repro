@@ -9,11 +9,15 @@ specifiers:
   '@typescript-eslint/parser': 5.61.0
   eslint: 8.44.0
   eslint-plugin-qwik: ^1.2.6
+  js-interpreter: ^4.0.0
   prettier: 2.8.8
   typescript: 5.1.6
   undici: 5.22.1
   vite: 4.4.0
   vite-tsconfig-paths: 4.2.0
+
+dependencies:
+  js-interpreter: 4.0.0
 
 devDependencies:
   '@builder.io/qwik': 1.2.6_undici@5.22.1
@@ -1715,6 +1719,13 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
+  /js-interpreter/4.0.0:
+    resolution: {integrity: sha512-ygqEkwc3WpGIB6zfQYTxwifA/GmRy53DA8/xXYJIrTzt2R2HuCKdsykX24DvgHF/abbDC5AfYe9EJ1XhmRHh9g==}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.8
+    dev: false
+
   /js-yaml/4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
@@ -2197,7 +2208,6 @@ packages:
 
   /minimist/1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
-    dev: true
 
   /mkdirp-classic/0.5.3:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
