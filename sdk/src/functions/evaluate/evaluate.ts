@@ -18,12 +18,12 @@ const runInNonNode = isNonNodeServer()
         logger.error(ERROR_MESSAGE, err);
         return () => {
           logger.error(ERROR_MESSAGE);
-          return undefined;
+          return 3;
         };
       })
   : () => 10;
 
-export function evaluate(): any {
+export function evaluate() {
   if (isBrowser()) return runInBrowser();
   if (isNonNodeServer()) return runInNonNode();
   return runInNode();
