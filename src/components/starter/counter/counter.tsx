@@ -1,6 +1,7 @@
 import { component$, useSignal, $ } from "@builder.io/qwik";
 import styles from "./counter.module.css";
 import Gauge from "../gauge";
+import { addAndMultiply } from "./helper";
 
 export default component$(() => {
   const count = useSignal(70);
@@ -9,7 +10,7 @@ export default component$(() => {
     if (newValue < 0 || newValue > 100) {
       return;
     }
-    count.value = newValue;
+    count.value = addAndMultiply(newValue, 2, 3);
   });
 
   return (
