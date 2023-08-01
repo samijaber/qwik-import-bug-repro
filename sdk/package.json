@@ -30,5 +30,8 @@
   },
   "peerDependencies": {
     "@builder.io/qwik": ">=1.0.0"
+  },
+  "dependencies": {
+    "eslint-plugin-unused-imports": "^3.0.0"
   }
 }
