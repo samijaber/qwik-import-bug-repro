@@ -3,10 +3,10 @@
   "license": "MIT",
   "version": "0.0.1",
   "type": "module",
-  "main": "./lib/index.qwik.cjs",
-  "module": "./lib/index.qwik.mjs",
-  "qwik": "./lib/index.qwik.mjs",
-  "types": "./types/src/index.qwik.d.ts",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.mjs",
+  "qwik": "./lib/index.mjs",
+  "types": "./types/src/index.d.ts",
   "files": [
     "README.md",
     "package.json",
@@ -15,8 +15,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./lib/index.qwik.mjs",
-      "require": "./lib/index.qwik.cjs"
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.cjs"
     }
   },
   "scripts": {
