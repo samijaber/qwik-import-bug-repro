@@ -1,11 +1,12 @@
 {
   "name": "@builder.io/sdk-qwik",
+  "license": "MIT",
   "version": "0.0.1",
   "type": "module",
   "main": "./lib/index.qwik.cjs",
   "module": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
-  "types": "./types/index.d.ts",
+  "types": "./types/src/index.qwik.d.ts",
   "files": [
     "README.md",
     "package.json",
@@ -20,18 +21,17 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "build": "tsc && vite build --mode lib"
+    "build": "tsc && pnpm run build:browser",
+    "build:browser": "SDK_ENV=browser vite build --mode lib"
   },
   "devDependencies": {
-    "@builder.io/qwik": "^1.2.6",
+    "@builder.io/qwik": "^1.2.7",
     "@types/node": "latest",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "typescript": "^5.1.6",
-    "vite": "^4.4.7"
+    "vite": "^4.4.9"
   },
   "peerDependencies": {
     "@builder.io/qwik": ">=1.0.0"
-  },
-  "dependencies": {
-    "eslint-plugin-unused-imports": "^3.0.0"
   }
 }

@@ -1,4 +1,4 @@
-import { RenderContent, processContentResult, getContent } from "../../sdk-src";
+import { RenderContent, getContent } from "@builder.io/sdk-qwik";
 import { component$ } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 

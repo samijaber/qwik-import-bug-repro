@@ -1,8 +1,7 @@
-import { evaluate } from "./functions/evaluate";
 import { Slot, component$, useVisibleTask$ } from "@builder.io/qwik";
 
 export const evalExpression = function evalExpression() {
-  return evaluate();
+  return console.log("hey");
 };
 export const emitStateUpdate = function emitStateUpdate() {
   window.dispatchEvent(new CustomEvent("builder:component:stateChange"));
